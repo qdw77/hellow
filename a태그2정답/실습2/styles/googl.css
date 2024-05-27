@@ -1,0 +1,23 @@
+body{
+  background: #000;
+}
+
+.goole{
+  width: 500px;
+  margin: 150px auto 0 auto;
+  text-align: center;
+}
+
+.be-whith{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.google img{
+  padding: 50px 0;
+}
+
+.tet-underline{
+  text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+div{
+  align-items: center;
+  background-color: black;
+
+}
+.e{
+  width: 90px;
+}
+
+ul{
+  flood-color: white;
+}
+
+.image{
+  height: 800px;
+  background-image: url(./images/back.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

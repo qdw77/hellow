@@ -1,0 +1,30 @@
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 50px auto;
+  font-size: 36px;
+}
+/*  */
+.header{
+  width: 100%;
+  background-color: aquamarine;
+  height: 100px;
+}
+
+.left-box{
+  width: 20%;
+  height: 500px;
+  background-color: cornflowerblue;
+}
+
+.right-box{
+  width: 80%;
+  height: 500px;
+  background-color: coral;
+}
+
+.footer{
+  height: 100px;
+  background-color: lightgreen;
+}
