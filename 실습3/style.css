@@ -135,6 +135,15 @@ a{
 }
 
 @media screen and (max-width:1200px) {
+  .global-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 12px 20px;
+    color: #f7e0e0;
+    background-color: gainsboro;
+  }
+
   
-  
+
 }
