@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  text-align: center;
+}
+.global-header,
+.glober-footer {
+  background-color: rgb(154, 154, 247);
+  color: white;
+  font-size: 36px;
+  padding: 30px 0;
+ }
+
+
+.back-img{
+  height: 500px;
+  background-image: url(./images/pngtree-blue-minimalist-business-background-picture-image_1301850.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-list{
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin: 40px auto;
+}
+
+.card-list div{
+  border: 1px solid rgb(157, 129, 241);
+  width: 30%;
+  height: 200px;
+}
+
+/* braeke point: 1200px */
+
+/* 최대 100px/ 1200px 이하부터 적용될 화면 */
+@media screen and (max-width: 1200px) {
+  .global-header,
+  .glober-footer {
+  background-color: rgb(247, 154, 235);
+  font-size: 24px;
+  padding: 30px 0;
+ }
+
+ .back-img{
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./images/pngtree-pink-pastel-background-with-pink-aesthetic-sky-image_15522922.png);
+ }
+  
+}
+
+@media screen and (max-width: 768px ) {
+  .global-header,
+  .glober-footer {
+   background-color: rgb(194, 170, 233);
+   font-size: 24px;
+    padding: 30px 0;
+  }
+
+  .back-img{
+   height: 320px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url(./images/고양이핸드폰배경3_큰얼굴2.jpg);
+  }
+
+  .card-list{
+   flex-direction: column;
+   justify-content: space-between;
+  }
+  .card-list div{
+   width: 100%;
+   height: 160px;
+   margin: 12px 0;
+   border: 1px solid plum;
+  }
+}
