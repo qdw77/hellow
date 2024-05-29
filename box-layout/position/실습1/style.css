@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+
+.g-h{
+  background-color: rgb(167, 227, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+}
+
+.logo img{
+  width: 130px;
+}
+
+.g-h li{
+  color: white;
+}
+
