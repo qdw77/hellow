@@ -38,3 +38,26 @@
 .scroll{
   height: 1600px;
 }
+
+.back-box{
+  /*   align-items: center;
+     justify-content: center;*/
+  position: relative;
+  background-color: bisque;
+  height: 600px;
+}
+
+.back-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-image: url(./images/고양이핸드폰배경3_큰얼굴2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
