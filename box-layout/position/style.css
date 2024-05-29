@@ -32,9 +32,7 @@
   position: sticky;
   top: 20px;
   left: 0;
-  width: 200px;
-  height: 120px;
-  border: 1px solid black;
+  z-index: 20;
   background-color:  aqua;
 }
 .scroll{
