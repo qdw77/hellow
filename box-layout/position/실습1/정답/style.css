@@ -20,6 +20,7 @@ li{
 }
 
 button{
+  cursor: pointer;
   border: none;
   background-color: transparent;
 }
@@ -89,7 +90,6 @@ body{
   padding: 12px 20px;
   border-radius: 8px;
   background-color: #fff;
-  cursor: pointer;
 }
 
 .card-list{
@@ -131,12 +131,12 @@ body{
 .fix-img1{
   margin-right: 20px;
   background-image: url(./assets/images/pngegg.png);
-  background-position: bottom left 540px;
+  background-position: bottom left 550px;
 }
 
 .fix-img2{
   background-image: url(./assets/images/스누피2.png);
-  background-position: bottom right 540px;
+  background-position: bottom right 550px;
 }
 
 .globel-footer{
@@ -194,6 +194,34 @@ body{
   font-size: 25px;
 }
 
+.popup{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: 400px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.popup.is-active {
+  display: block;
+}
+
+.popup-header{
+  display: flex;
+  justify-content: space-between;
+}
+.popup-close-btn{
+  font-size: 20px;
+}
+
+.popup img{
+  width: 100%;
+}
 @media screen and (max-width : 1200px) {
   .card-list{
     width: 70%;
