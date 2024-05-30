@@ -57,7 +57,7 @@ body{
 }
 
 .gnb-list li a:hover {
-  color: blue;
+  color: dodgerblue;
 }
 
 .back-img{
@@ -86,7 +86,7 @@ body{
 
 .popup-open-btn {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 8px;
   background-color: #fff;
   cursor: pointer;
@@ -111,7 +111,7 @@ body{
   margin-top: 12px;
 }
 
-.fix-box{
+.fix-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,15 +157,15 @@ body{
 }
 
 .sns-link li a i{
-  font-size: 25px;
-  transition: color 600ms;
+  font-size: 30px;
+  transition: color 300ms;
 }
 
 .sns-link li a i:hover {
   color: dodgerblue;
 }
 
-..top-btn{
+.top-btn{
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -191,6 +191,7 @@ body{
 
 .quick-menu ul li a{
   color: black;
+  font-size: 25px;
 }
 
 @media screen and (max-width : 1200px) {
@@ -251,4 +252,5 @@ body{
 
   .quick-menu{
     display: none;
+  }
 }
