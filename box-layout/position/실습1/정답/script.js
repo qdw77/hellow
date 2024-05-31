@@ -46,7 +46,7 @@ sidebarCloseBtn.addEventListener('click', CloseSidebar);
 
 // 함수 소괄호 안 : 매개변수
 function plus (num1,num2 ) {
-  console.log(num1, num2)
+  console.log(num1, num2);
   console.log(num1 + num2);
 }
 // 함수는 호출했을 때 실행된다.
