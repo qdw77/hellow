@@ -132,12 +132,12 @@ body{
 .fix-img1{
   margin-right: 20px;
   background-image: url(./assets/images/pngegg.png);
-  background-position: bottom left 550px;
+  background-position: bottom left 460px;
 }
 
 .fix-img2{
   background-image: url(./assets/images/스누피2.png);
-  background-position: bottom right 550px;
+  background-position: bottom right 460px;
 }
 
 .globel-footer{
