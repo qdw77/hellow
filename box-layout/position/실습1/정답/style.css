@@ -25,6 +25,11 @@ button{
   background-color: transparent;
 }
 
+/* 모바일 버전에서만 보일 요소 () */
+.sm-only{
+  display: none;
+}
+
 body{
   font-family: "Cute Font", sans-serif;
 }
@@ -223,6 +228,32 @@ body{
 .popup img{
   width: 100%;
 }
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+.sidebar-close-btn{
+  text-align: right;
+  font-size: 22px;
+}
+
+.sidebar ul li{
+  text-align: center;
+}
+
+.sidebar ul li a{
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 25px;
+  color: #000;
+}
+
 @media screen and (max-width : 1200px) {
   .card-list{
     width: 70%;
@@ -260,6 +291,11 @@ body{
 }
 
 @media screen and (max-width : 768px) {
+
+  .sm-only{
+    display: block;
+  }
+  
   .card-list {
     width: 90%;
   }
