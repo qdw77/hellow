@@ -19,18 +19,18 @@ let sidebar = document.querySelector('.sidebar')
 let sidebarOpenBtn = document.querySelector('.sidebar-open-btn')
 let sidebarCloseBtn = document.querySelector('.sidebar-close-btn')
 
-// 1.sidebarOpenBtn을 클릭했을 때
-// sidebar에 is-active 클래스 추가
+// // 1.sidebarOpenBtn을 클릭했을 때
+// // sidebar에 is-active 클래스 추가
 
-sidebarOpenBtn.addEventListener('click',function(){
-  // sidebarOpenBtn클릭 했을 때 sidebar에
-  // is-active라는 클래스 추가
-  sidebar.classList.add('is-active')
-})
+// sidebarOpenBtn.addEventListener('click',function(){
+//   // sidebarOpenBtn클릭 했을 때 sidebar에
+//   // is-active라는 클래스 추가
+//   sidebar.classList.add('is-active')
+// })
 
-sidebar.addEventListener('click', function(){
-  sidebar.classList.remove('is-active')
-})
+// sidebar.addEventListener('click', function(){
+//   sidebar.classList.remove('is-active')
+// })
 
 // 함수 소괄호 안 : 매개변수
 function plus (num1,num2 ) {
