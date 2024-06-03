@@ -1,12 +1,17 @@
+/* head */
 /* google font */
 .gothic-a1-regular {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+/* google font를 body 적용 */
 body{
   font-family: "Gothic A1", sans-serif;
 }
+
+/* body-div */
 
 *{
   padding: 0;
@@ -202,6 +207,7 @@ footer ul li a{
   background-color: rgb(235, 27, 27);
 }
 
-.footer-link li i:hover{
+/* 부모요소에 호버를 작성 후 자식요소를 더하면 두개 전부 적용된다. */
+.footer-link li:hover i{
   color: #fff;
 }
