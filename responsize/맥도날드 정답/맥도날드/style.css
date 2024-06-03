@@ -8,5 +8,200 @@ body{
   font-family: "Gothic A1", sans-serif;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
 
+a{
+  color: #000;
+  text-decoration: none;
+}
 
+li{
+  list-style: none;
+}
+
+input{
+  border: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* 모바일 버젼에서만 보일 부분 */
+.sm-only{
+  display: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+
+}
+
+.logo img{
+  width: 60px;
+}
+
+.gnb-list{
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.gnb-list li a{
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-list li a:hover{
+  color: rgb(235, 27, 27);
+}
+
+.search-btn{
+  cursor: pointer;
+}
+
+.lnb{
+  position: sticky;
+  left: 0;
+  top: 0;
+  border-top: 2px solid rgb(255, 213, 23);
+  background-color: rgb(235, 27, 27);
+}
+
+.lnb-list{
+  display: flex;
+  padding: 12px 40px;
+}
+
+.lnb-list a{
+  color: #fff;
+  padding-right: 16px;
+}
+
+.back-img{
+  background-image: url(./assets/images/back1.jpeg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+
+.menu-list{
+  width: 90%;
+  margin: 40px auto;
+  justify-content: space-between;
+  display: flex;
+  /* flex-warp: 기본값이 nowrap(공간이 부족해도 수평정렬) */
+  flex-wrap: wrap;
+}
+
+.mnew-item{
+  width: calc((100% - 60px) /3);
+  margin: 16px 0;
+  text-align: center;
+  border-radius: 12px;
+        /* offset/ offest-y/ blur */
+  box-shadow: 3px 3px 5px #e1e1e1 ;
+  overflow: hidden;
+}
+
+.mnew-item a {
+  transition: opacity 300ms ease-in-out;
+}
+
+.mnew-item a:hover{
+  /* opacity 기본값 1(불투명) */
+  opacity: 0.5;
+}
+
+.mnew-item img{
+  width: 100%;
+}
+
+.mac-story{
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  padding: 8px 0;
+  border-top: 2px solid rgb(255, 213, 23);
+  background-color: #fff;
+}
+
+.mac-story-list{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mac-story-list li img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer{
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(235, 27, 27);
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-1{
+  margin-right: 50px;
+}
+
+.txt-yellow a{
+  color: rgb(255, 213, 23);
+}
+
+footer ul li,
+footer ul li a{
+  color: #fff;
+}
+
+.footer-info{
+  flex-grow: 1;
+}
+
+.footer-link{
+  display: flex;
+}
+
+.footer-link li{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.footer-link li i{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  color: rgb(235, 27, 27);
+  transition: color 300ms ease-in-out;
+}
+
+.footer-link li:hover{
+  background-color: rgb(235, 27, 27);
+}
+
+.footer-link li i:hover{
+  color: #fff;
+}
