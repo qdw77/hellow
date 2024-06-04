@@ -19,3 +19,5 @@ document.querySelectorAll('.item')[2].style.color = 'blue';
   //j-Qurey
   $('.item').css('color', 'red');
 
+// 
+
