@@ -108,7 +108,7 @@ header{
   flex-wrap: wrap;
 }
 
-.mnew-item{
+.mneu-item{
   width: calc((100% - 60px) /3);
   margin: 16px 0;
   text-align: center;
@@ -118,16 +118,16 @@ header{
   overflow: hidden;
 }
 
-.mnew-item a {
+.mneu-item a {
   transition: opacity 300ms ease-in-out;
 }
 
-.mnew-item a:hover{
+.mneu-item a:hover{
   /* opacity 기본값 1(불투명) */
   opacity: 0.5;
 }
 
-.mnew-item img{
+.mneu-item img{
   width: 100%;
 }
 
@@ -198,6 +198,7 @@ footer ul li a{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  cursor: pointer;
   font-size: 24px;
   color: rgb(235, 27, 27);
   transition: color 300ms ease-in-out;
@@ -210,4 +211,121 @@ footer ul li a{
 /* 부모요소에 호버를 작성 후 자식요소를 더하면 두개 전부 적용된다. */
 .footer-link li:hover i{
   color: #fff;
+}
+
+.search{
+  /* 이따가   display: none;  수정 */
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.search is-open{
+  display: block;
+}
+
+/* >가 있을 때 맨 아래 자식요소에게 효과적용 */
+.search > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.search-box input{
+  flex-grow: 1;
+  margin-right: 20px;
+  padding: 24px 40px;
+  border-radius: 30px;
+}
+
+.search-box{
+  width: 100%;
+  display: flex;
+}
+
+.search-box button{
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 24px 40px;
+  background-color: rgb(255, 213, 23);
+}
+
+.search-close-btn{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 50px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(255, 213, 23);
+}
+
+.search-close-btn i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+}
+
+@media screen and (max-width : 1200px) {
+  .mneu-item{
+    width: calc((100% - 30px) /2);
+  }
+
+  
+  .mac-story-list{
+    width: 50%;
+  }
+  
+  .mac-story-list li img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .sm-only{
+    display: block
+  }
+
+  .sm-hidden{
+    display: none;
+  }
+
+  .sidbear-open-btn{
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .mneu-item{
+    width: 100%;
+  }
+
+  footer{
+    flex-wrap: wrap;
+  }
+  
+  .footer-1{
+    margin-right: 50px;
+  }
+  
+  .footer-info{
+    text-align: right;
+  }
+  
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
 }
