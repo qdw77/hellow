@@ -102,3 +102,5 @@ document.querySelectorAll('.item')[2].style.color = 'blue';
 // ``:`안녕 ${name} 나는 ${age}`
 // parameter(매개변수)
 // 함수를 호출할 때 함수에 넘겨주는 값
+
+// 자료형/연산자/조건문/반복문
