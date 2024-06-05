@@ -71,7 +71,7 @@ document.querySelectorAll('.item')[2].style.color = 'blue';
   let hi = '안녕하세요 저는 ';
   let name = '박은주';
   // 변수, 문자열 
-// ``(빽팀~~)backtick ${변수명}
+ // ``(빽팀~~)backtick ${변수명}
   let my = hi + name + '입니다';
   let my1 = `안녕하세요 저는 ${name} 입니다`
 
