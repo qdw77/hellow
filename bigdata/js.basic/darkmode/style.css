@@ -1,0 +1,45 @@
+/* 밑 라인 
+
+  버튼 클릭 후 체인지
+  logo/
+  background-color: black
+  color: white
+  button/background-color: white
+  color: black
+  */
+
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
+div{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 40px;
+  display: flex;
+  border-bottom: 2px solid gainsboro;
+}
+
+
+.logo{
+  background-color: white;
+  color: black;
+}
+
+button{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+
+
+
+
+
+
