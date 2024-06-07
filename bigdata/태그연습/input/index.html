@@ -5,9 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- j-Query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <!-- input/table/반복문 -->
+   <!-- .wrapper =>  -->
+  <div class="wrapper">
+    <h1>회원가입</h1>
+    <p>회원가입 페이지 입니다.</p>
+    
+    <!-- table 자식요소로 tr, td, th -->
+    <!-- <table border="1">
+      <tr>
+        <th> 이름 </th>
+        <th>성별</th>   
+      </tr>
+
+      <tr>
+        <td> 박은주 </td>
+        <td>여성</td>
+      </tr>
+    </table> -->
+
+      <!-- <table>
+        <tr>
+          <td> 아이디 </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+      </table> -->
+      <!-- action: 데이터가 전송될 서버 -->
+      <!-- method: 대이터를 전송하는 방식(HTTP 메서드)를 지정한다.  -->
+      <!--  -->
+      <form action="./action.html" method="get">
+        <!-- get의 단점은 보안에 취약 -->            
+
+
+        <table>
+          <tr>
+            <td>아이디 :</td>
+            <td><input type="text"></td>
+            <!-- type= "password"-입력한 값이 보이지 않음 -->
+          </tr>
+        </table>
+
+        <select class="year" name="" id="">
+          <!-- select 안의 자식요소로  option을 사용한다-->
+           <!-- 숫자를 반복요소로 편하게 입력가능 -->
+        </select>
+
+        <!-- radio:중복선책x -->
+         <!-- checkbox: 중복선택 o -->
+
+        <span>남자<input type="radio" name="gender"></span>
+        <span>여자<input type="radio" name="gender"></span>
+        
+        <input type="range">
+        <!-- step="20" -->
+
+        <input type="color">
+        <input type="file">
+        <textarea name="" id=""></textarea>
+
+        <input type="submit">
+        <input type="reset">
+      </form>
+   </div>
   <script src="./script.js"></script>
 </body>
 </html>
