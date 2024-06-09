@@ -14,7 +14,7 @@
       불편사항이 있으시다면 042-1234-1234로 연락주시기 바랍니다.
     </p>
 
-    <form action="./action.html" >
+    <form action="./action.html" method="get">
       <table>
         <tr>
           <td>아이디 :</td>
@@ -48,27 +48,27 @@
           <td><input type="text"></td>
         </tr>
 
-        <tr>
+        <tr class="city">
           <td>
             국적 :
-            <select class="city" name="" id="">
+            <select name="" id="">
               <option value="">대한민국</option>
             </select>
           </td>
         </tr>
 
-        <tr>
+        <tr >
           <td>
             생년월일 :
             <select class="year" name="" id=""></select>
             년
-            <select class="year" name="" id=""></select>
+            <select name="" id=""></select>
             월
-            <select class="year" name="" id=""></select>
+            <select name="" id=""></select>
             일
           </td>
         </tr>
-        <tr>
+        <tr class="gender">
           <td>
             성별 :
             <span>남자<input type="radio" name="gender"></span>
@@ -76,18 +76,52 @@
           </td>
         </tr>
         
+        <tr class="Number">
+          <td >
+            전화번호 :
+            <select name="" id="">
+              <option value="">010</option>
+            </select>
+            -
+            <select name="" id=""></select>
+            -
+            <select name="" id=""></select>
+          </td>
+        </tr>
+
         <tr>
           <td>
-            전화번호 :
-            <section class="nameber" ></section>
+            희망연봉
+            <input type="range">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            증명사진
+            <input type="file">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            자기소개서
+            <textarea name="" id="">400자 미만으로 작성하십시오</textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit">
+          </td>
+
+          <td>
+            <input type="reset">
           </td>
         </tr>
       </table>
 
       
-      <table>
-
-      </table>
 
     </form>
   </div>
