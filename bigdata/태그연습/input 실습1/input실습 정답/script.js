@@ -1,3 +1,7 @@
+let inVrti = pwVeri = pwchkVer = false;
+console.log(a,b,c);
+
+
 let userid = document.getElementById('userid');
 let idwran = document.querySelector('.id-wran')
 
@@ -13,6 +17,8 @@ userid.addEventListener('focusout', function() {
     idwran.innerHTML = `<span class="txt-red">아이디들 8글자 이상 입력하세요</span>`;
   } else {
     idwran.innerHTML = `<span class = "txt-green">멋진 아이디네요</span>`;
+
+    inVrti =true;
   }
 })
 
@@ -24,6 +30,7 @@ userpw.addEventListener('focusout',function(){
     pwwarn.innerHTML = `<span class="txt-red">비밀번호에 숫자,영문자,특수문자를 사용하여 8~15자의 비밀번호를 만들어야합니다.</span>`
   } else{
     pwwarn.innerHTML = '';
+    pwVeri=true;
   }
 })
 
@@ -33,6 +40,7 @@ let pwchkWarn = document.querySelector('.pwchk-warn');
 userPwChk.addEventListener('focusout',function(){
   if(userpw.value == userPwChk.value){
     pwchkWarn.innerHTML = ''
+    pwchkVer=true;
   } 
   else{
     pwchkWarn.innerHTML =`<span class="txt-red">비밀번호가 일치하지 않습니다.</span>`
@@ -73,7 +81,29 @@ let CheckBoxs = document.querySelectorAll('input[type="checkbox"][name="hopbby"]
 let maxCount = 5;
 
 CheckBoxs.forEach((item) =>{
-  item.addEventListener('chage',()=> {
-    let CheckBoxs = document.querySelectorAll('input[type="checkbox"][name="hopbby"]'):CheckCount
+  item.addEventListener('change',()=> {
+    let CheckCount = document.querySelectorAll('input[type="checkbox"][name="hopbby"]:Checked').length;
+    console.log(CheckCount)
+
+    if(CheckCount > maxCount) {
+      item.Checked = false;
+      alert('최대 5개까지만 선택할 수 있습니다.');
+    }
    })
   })
+
+  let submitBtn = document.getElementById('submit-btn');
+  let suBmIt = document.getElementById('join-form');
+
+  submitBtn.addEventListener('click', (e) => {
+    if(inVrti && pwVeri && pwchkVer){
+      joinFrom.submit();
+    } else{
+      e.preventDefault();
+    }
+  })
+
+  // git init
+  // git config user.name "username"
+  // git config user.email "useremail"
+  // 
