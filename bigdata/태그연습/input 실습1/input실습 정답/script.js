@@ -11,3 +11,12 @@ for(let i = 1920; i <= getYear; i++) {
   year.insertAdjacentHTML('beforeend',option);
 }
 
+for(let i = 1; i <=12; i++) {
+  let option = `<option>${i}</option>`;
+  month.insertAdjacentHTML('beforeend',option);
+}
+
+for(let i = 1; i <=31; i++) {
+  let option = `<option>${i}</option>`;
+  date.insertAdjacentHTML('beforeend',option);
+}
