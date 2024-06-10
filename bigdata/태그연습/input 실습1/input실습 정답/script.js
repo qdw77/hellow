@@ -1,5 +1,5 @@
-let inVrti = pwVeri = pwchkVer = false;
-console.log(a,b,c);
+let idval = pwval = pwCkval = false;
+
 
 
 let userid = document.getElementById('userid');
@@ -8,17 +8,18 @@ let idwran = document.querySelector('.id-wran')
 
 // keyup 은 키를 눌렀을 다가 놨을 때 나오는 이벤트
 userid.addEventListener('focusout', function() {
+
   // userid.value => input에 입력된 텍스트
   // userid.value.length => input에 입력된 길이
   // 8글자 미만일 때 '아이디들 8글자 이상 입력하시오' (color : green)
   // 8글자 이상일 때 '멋진 아이디네요!' 
-  console.log(userid.value)
+
   if(userid.value.length < 8) {
     idwran.innerHTML = `<span class="txt-red">아이디들 8글자 이상 입력하세요</span>`;
   } else {
     idwran.innerHTML = `<span class = "txt-green">멋진 아이디네요</span>`;
+    idval =true;
 
-    inVrti =true;
   }
 })
 
@@ -30,7 +31,7 @@ userpw.addEventListener('focusout',function(){
     pwwarn.innerHTML = `<span class="txt-red">비밀번호에 숫자,영문자,특수문자를 사용하여 8~15자의 비밀번호를 만들어야합니다.</span>`
   } else{
     pwwarn.innerHTML = '';
-    pwVeri=true;
+    pwval = true;
   }
 })
 
@@ -40,7 +41,7 @@ let pwchkWarn = document.querySelector('.pwchk-warn');
 userPwChk.addEventListener('focusout',function(){
   if(userpw.value == userPwChk.value){
     pwchkWarn.innerHTML = ''
-    pwchkVer=true;
+    pwCkval = true;
   } 
   else{
     pwchkWarn.innerHTML =`<span class="txt-red">비밀번호가 일치하지 않습니다.</span>`
@@ -92,16 +93,34 @@ CheckBoxs.forEach((item) =>{
    })
   })
 
-  let submitBtn = document.getElementById('submit-btn');
-  let suBmIt = document.getElementById('join-form');
+  let suBBtn = document.getElementById('.submit-btn');
+  let JoinForm = document.getElementById('join-form');
 
-  submitBtn.addEventListener('click', (e) => {
-    if(inVrti && pwVeri && pwchkVer){
-      joinFrom.submit();
-    } else{
-      e.preventDefault();
-    }
-  })
+  console.log(suBBtn)
+
+    suBBtn.addEventListener('click', (e) => {
+      if(idval && pwval && pwCkval){
+        JoinForm.submit();
+      }
+
+      else{
+        e.preventDefault();
+      }
+    })
+
+
+  // let submitBtn = document.getElementById('submit-btn');
+  // let joinForm = document.getElementById('join-form');
+
+  // submitBtn.addEventListener('click', (e) => {
+  //   if(idval && pwval && pwCkval) {
+  //     joinForm.submit();
+  //   } else{
+  //     e.preventDefault();
+  //   }
+  // })
+
+
 
   // git init
   // git config user.name "username"
