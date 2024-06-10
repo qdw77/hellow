@@ -6,8 +6,8 @@ let kst = new Date();
 let getYear = kst.getFullYear();
 
 // 1900 i 값이 작거나 같을 때까지 i를 1씩 더하며 반복
-for(let i = 1920; i <= getYear; i++) {
-  let option = `<option>${i}</option>`;
+for(let i = 1920; i <= getYear; i++) //어디서 부터 언제까지 반복 {
+  let option = `<option>${i}</option>`; //어디에 넣을 건지
   year.insertAdjacentHTML('beforeend',option);
 }
 
