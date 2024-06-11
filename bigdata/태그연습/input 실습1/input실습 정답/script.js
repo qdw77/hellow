@@ -84,7 +84,7 @@ let maxCount = 5;
 CheckBoxs.forEach((item) =>{
   item.addEventListener('change',()=> {
     let CheckCount = document.querySelectorAll('input[type="checkbox"][name="hopbby"]:Checked').length;
-    console.log(CheckCount)
+
 
     if(CheckCount > maxCount) {
       item.Checked = false;
@@ -93,20 +93,21 @@ CheckBoxs.forEach((item) =>{
    })
   })
 
-  let suBBtn = document.getElementById('.submit-btn');
-  let JoinForm = document.getElementById('join-form');
 
-  console.log(suBBtn)
+  // let suBBtn = document.getElementById('.submit-btn');
+  // let JoinForm = document.getElementById('join-form');
 
-    suBBtn.addEventListener('click', (e) => {
-      if(idval && pwval && pwCkval){
-        JoinForm.submit();
-      }
+  // console.log(suBBtn)
 
-      else{
-        e.preventDefault();
-      }
-    })
+  //   suBBtn.addEventListener('click', (e) => {
+  //     if(idval && pwval && pwCkval){
+  //       JoinForm.submit();
+  //     }
+
+  //     else{
+  //       e.preventDefault();
+  //     }
+  //   })
 
 
   // let submitBtn = document.getElementById('submit-btn');
