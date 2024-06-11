@@ -83,43 +83,43 @@ let maxCount = 5;
 
 CheckBoxs.forEach((item) =>{
   item.addEventListener('change',()=> {
-    let CheckCount = document.querySelectorAll('input[type="checkbox"][name="hopbby"]:Checked').length;
+    let CheckCount = document.querySelectorAll('input[type="checkbox"][name="hopbby"]:checked').length;
 
 
     if(CheckCount > maxCount) {
-      item.Checked = false;
+      item.checked = false;
       alert('최대 5개까지만 선택할 수 있습니다.');
     }
    })
   })
 
 
-  // let suBBtn = document.getElementById('.submit-btn');
-  // let JoinForm = document.getElementById('join-form');
+  let suBBtn = document.getElementById('.submit-btn');
+  let JoinForm = document.getElementById('join-form');
 
-  // console.log(suBBtn)
+  console.log(suBBtn)
 
-  //   suBBtn.addEventListener('click', (e) => {
-  //     if(idval && pwval && pwCkval){
-  //       JoinForm.submit();
-  //     }
+    suBBtn.addEventListener('click', (e) => {
+      if(idval && pwval && pwCkval){
+        JoinForm.submit();
+      }
 
-  //     else{
-  //       e.preventDefault();
-  //     }
-  //   })
+      else{
+        e.preventDefault();
+      }
+    })
 
 
-  // let submitBtn = document.getElementById('submit-btn');
-  // let joinForm = document.getElementById('join-form');
+  let submitBtn = document.getElementById('submit-btn');
+  let joinForm = document.getElementById('join-form');
 
-  // submitBtn.addEventListener('click', (e) => {
-  //   if(idval && pwval && pwCkval) {
-  //     joinForm.submit();
-  //   } else{
-  //     e.preventDefault();
-  //   }
-  // })
+  submitBtn.addEventListener('click', (e) => {
+    if(idval && pwval && pwCkval) {
+      joinForm.submit();
+    } else{
+      e.preventDefault();
+    }
+  })
 
 
 
