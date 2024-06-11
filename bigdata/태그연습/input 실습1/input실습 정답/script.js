@@ -94,12 +94,12 @@ CheckBoxs.forEach((item) =>{
   })
 
 
-  let suBBtn = document.getElementById('.submit-btn');
+  let subm = document.getElementById('.submit-btn');
   let JoinForm = document.getElementById('join-form');
 
-  console.log(suBBtn)
+ 
 
-    suBBtn.addEventListener('click', (e) => {
+    subm.addEventListener('click',(e) => {
       if(idval && pwval && pwCkval){
         JoinForm.submit();
       }
@@ -110,16 +110,16 @@ CheckBoxs.forEach((item) =>{
     })
 
 
-  let submitBtn = document.getElementById('submit-btn');
-  let joinForm = document.getElementById('join-form');
+  // let submitBtn = document.getElementById('submit-btn');
+  // let joinForm = document.getElementById('join-form');
 
-  submitBtn.addEventListener('click', (e) => {
-    if(idval && pwval && pwCkval) {
-      joinForm.submit();
-    } else{
-      e.preventDefault();
-    }
-  })
+  // submitBtn.addEventListener('click', (e) => {
+  //   if(idval && pwval && pwCkval) {
+  //     joinForm.submit();
+  //   } else{
+  //     e.preventDefault();
+  //   }
+  // })
 
 
 
