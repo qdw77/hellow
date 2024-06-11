@@ -1,4 +1,4 @@
-let idval = pwval = pwCkval = false;
+let idVeri = pwVeri = pwChkVeri = false;
 
 
 
@@ -18,7 +18,7 @@ userid.addEventListener('focusout', function() {
     idwran.innerHTML = `<span class="txt-red">아이디들 8글자 이상 입력하세요</span>`;
   } else {
     idwran.innerHTML = `<span class = "txt-green">멋진 아이디네요</span>`;
-    idval =true;
+    idVeri = true;
 
   }
 })
@@ -31,7 +31,7 @@ userpw.addEventListener('focusout',function(){
     pwwarn.innerHTML = `<span class="txt-red">비밀번호에 숫자,영문자,특수문자를 사용하여 8~15자의 비밀번호를 만들어야합니다.</span>`
   } else{
     pwwarn.innerHTML = '';
-    pwval = true;
+    pwVeri = true;
   }
 })
 
@@ -41,7 +41,7 @@ let pwchkWarn = document.querySelector('.pwchk-warn');
 userPwChk.addEventListener('focusout',function(){
   if(userpw.value == userPwChk.value){
     pwchkWarn.innerHTML = ''
-    pwCkval = true;
+    pwChkVeri = true;
   } 
   else{
     pwchkWarn.innerHTML =`<span class="txt-red">비밀번호가 일치하지 않습니다.</span>`
@@ -94,14 +94,14 @@ CheckBoxs.forEach((item) =>{
   })
 
 
-  let subm = document.getElementById('.submit-btn');
-  let JoinForm = document.getElementById('join-form');
+  let submitBtn = document.getElementById('submit-btn');
+  let joinForm = document.getElementById('join-form');
 
  
 
-    subm.addEventListener('click',(e) => {
-      if(idval && pwval && pwCkval){
-        JoinForm.submit();
+    submitBtn.addEventListener('click',(e) => {
+      if(idVeri && pwVeri && pwChkVeri) {
+        joinForm.submit();
       }
 
       else{
@@ -109,17 +109,6 @@ CheckBoxs.forEach((item) =>{
       }
     })
 
-
-  // let submitBtn = document.getElementById('submit-btn');
-  // let joinForm = document.getElementById('join-form');
-
-  // submitBtn.addEventListener('click', (e) => {
-  //   if(idval && pwval && pwCkval) {
-  //     joinForm.submit();
-  //   } else{
-  //     e.preventDefault();
-  //   }
-  // })
 
 
 
